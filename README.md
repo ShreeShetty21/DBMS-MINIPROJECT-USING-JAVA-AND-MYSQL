@@ -4,7 +4,9 @@ TABLES USED IN MYSQL ARE:
 
 
 
-ADMIN 
+ADMIN---------------------
+
+
 CREATE TABLE ’ADMIN’ (’ADMIN-ID’ char(15) NOT NULL,
 ’ADMIN-PASSWORD’ varchar(15) NOT NULL
 PRIMARY KEY’(ADMIN-ID’));
@@ -13,7 +15,10 @@ PRIMARY KEY’(ADMIN-ID’));
 
 
 
-EXCAVATOR
+EXCAVATOR---------------------
+
+
+
 CREATE TABLE ’EXCAVATOR’(’EX-ID’ int(20)AUTOINCREMENT NOT NULL,
 ’EX-NAME’ varchar(20),
 ’AVAILABLE’ char(3),
@@ -26,7 +31,10 @@ PRIMARY KEY(’EX-ID’));
 
 
 
-USER
+USER--------------------------
+
+
+
 CREATE TABLE ’USER’(’FNAME’ char(10)NOT NULL,
 ’LNAME’ char(10)NOT NULL,
 ’EMAIL’ varchar(50)NOT NULL,
@@ -40,7 +48,10 @@ PRIMARY KEY(EMAIL));
 
 
 
-BOOKING
+BOOKING----------------------------
+
+
+
 CREATE TABLE ’BOOKING’(’BOOK-ID’ int AUTOINCREMENT NOT NULL,
 ’BOOK-PLACE’ char(10)NOT NULL,
 ’BOOK-DATE’ date NOT NULL,
@@ -55,7 +66,10 @@ CASCADE);
 
 
 
-PAYMENT
+PAYMENT--------------------------------
+
+
+
 CREATE TABLE ’PAYMENT’(’PAYMENT-ID’ int AUTOINCREMENT NOT NULL,
 ’CARD-NO’ int NOT NULL,
 ’EXP-DATE’ date NOT NULL,
@@ -69,7 +83,10 @@ CASCADE);
 
 
 
-FEEDBACK
+FEEDBACK-----------------------------------
+
+
+
 CREATE TABLE ’FEEDBACK’(’FEED-ID’ int AUTOINCREMENT NOTNULL,
 ’COMMENT’ Varchar(200)NOT NULL,
 ’EMAIL’ varchar(50),
