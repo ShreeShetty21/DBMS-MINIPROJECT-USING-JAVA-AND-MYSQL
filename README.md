@@ -1,5 +1,10 @@
 The Excavator Rental Management System is a software solution designed to streamline the process of managing excavator rentals for construction companies, contractors, and rental agencies.
 
+
+NETBEANS IDE AND MYSQL CLIENT
+
+
+
 TABLES USED IN MYSQL ARE:
 
 
